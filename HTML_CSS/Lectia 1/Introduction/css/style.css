@@ -1,0 +1,22 @@
+h5{
+    color: tomato;
+    border: 3px solid blue;
+}
+
+h6{
+    color: palevioletred;
+    border: 3px solid greenyellow;
+}
+
+#h1ID1{
+    color: aqua !important
+}
+
+.heading{
+    background-color: black;
+}
+
+div p:first-child{
+    background-color: red;
+}
+

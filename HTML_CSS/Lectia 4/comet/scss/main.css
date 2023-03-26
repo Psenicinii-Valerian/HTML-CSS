@@ -1,0 +1,143 @@
+.collapse-menu {
+  background-color: #111a53;
+  height: calc(100vh - 100px);
+  min-height: 500px;
+  position: relative;
+  right: 100%;
+  transition: all 0.5s ease-in-out;
+}
+.collapse-menu.active {
+  right: 0;
+}
+.collapse-menu.active .button-position {
+  right: 0;
+}
+.collapse-menu .button-position {
+  right: -52px;
+}
+
+.navigation-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px 0px;
+}
+
+.navigation-menu .menu-items {
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
+}
+.navigation-menu .menu-item {
+  padding: 15px 0px;
+}
+.navigation-menu .menu-item a {
+  color: #8d91c2;
+  font-size: 20px;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+}
+.navigation-menu .menu-item a:hover {
+  color: #5ad9b9;
+}
+
+.authorization-btn button {
+  background-color: #5ad9b9;
+  border: 2px solid #5ad9b9;
+  color: white;
+  border-radius: 25px;
+  padding: 10px 30px;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+}
+.authorization-btn button:hover {
+  background-color: #fff;
+  color: #5ad9b9;
+}
+
+body {
+  margin: 0;
+  background-color: black;
+}
+
+.button-position {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.collapse-btn {
+  position: relative;
+  transform: rotate(0deg);
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.collapse-btn button {
+  position: relative;
+  width: 26px;
+  height: 20px;
+}
+.collapse-btn button:focus {
+  box-shadow: none;
+}
+
+.collapse-btn span {
+  display: block;
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background: white;
+  opacity: 1;
+  left: 0;
+  transform: rotate(0deg);
+  transition: 0.25s ease-in-out;
+}
+
+.collapse-btn {
+  margin: 15px;
+}
+.collapse-btn span {
+  background: white;
+  height: 4px;
+}
+.collapse-btn button {
+  background-color: transparent;
+  border: none;
+}
+
+.collapse-btn span:nth-child(1) {
+  top: 0px;
+  transform-origin: left center;
+}
+
+.collapse-btn span:nth-child(2) {
+  top: 8px;
+  transform-origin: left center;
+}
+
+.collapse-btn span:nth-child(3) {
+  top: 16px;
+  transform-origin: left center;
+}
+
+.collapse-btn.open span:nth-child(1) {
+  transform: rotate(45deg);
+  top: 0px;
+  left: 3px;
+}
+
+.collapse-btn.open span:nth-child(2) {
+  width: 0%;
+  opacity: 0;
+}
+
+.collapse-btn.open span:nth-child(3) {
+  transform: rotate(-45deg);
+  top: 18px;
+  left: 3px;
+}/*# sourceMappingURL=main.css.map */

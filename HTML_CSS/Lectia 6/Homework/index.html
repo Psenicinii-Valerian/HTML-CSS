@@ -1,0 +1,91 @@
+<html>
+    <head>
+        <title>Practice ex 2</title>
+        <link rel="stylesheet" href="./scss/main.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <body>
+
+        <!-- Inputs -->
+        <div class="section-name">
+            <h2>Inputs</h2>
+        </div>
+       
+        <div class="inputs inputs-resp">                   
+            <div class="input-resp">
+                <input type="text" name="text" placeholder="Enter some text">                
+            </div>
+            <div class="input-resp">
+                <input type="text" name="valid-text" placeholder="valid text" required pattern=".{2,10}">
+            </div>
+            <div class="input-resp">
+                <input type="text" name="invalid-text" placeholder="invalid text" required pattern=".{2,10}">
+            </div>  
+        </div>
+
+        <!-- Check boxes -->
+        <div class="section-name">
+            <h2>Check boxes</h2>
+        </div>
+
+        <div class="switches">                   
+            <label id="switchId" class="switch">
+                <input id="checkboxId" type="checkbox">
+                <span class="slider"></span>
+                <span class="subscribe-text">Subscribe</span>
+            </label>
+
+            <label id="switchId" class="switch">
+                <input id="checkboxId" type="checkbox">
+                <span class="slider"></span>
+                <span class="subscribe-text">Subscribe</span>
+            </label>             
+        </div>
+
+        <!-- Radio buttons -->
+        <div class="section-name">
+            <h2>Radio buttons</h2>
+        </div>
+    
+        <div class="radio-btns">   
+            <div class="radio-item">
+                <span>Gender:</span>
+            </div>                
+            
+            <div class="radio-item">
+                <input type="radio" name="flexRadioDefault">
+                <span class="gender">Male</span>
+            </div>
+
+            <div class="radio-item">
+                <input type="radio" name="flexRadioDefault">
+                <span class="gender">Female</span>
+            </div>
+        </div>   
+
+        <!-- Buttons -->
+        <div class="section-name">
+            <h2>Buttons</h2>
+        </div>
+
+        <div class="buttons">
+            <button type="button" class="btn btn-work btn-active">Active</button>
+            <button type="button" class="btn btn-work btn-hover">Hover</button>
+            <button type="button" class="btn btn-work btn-danger">Danger</button>
+            <button type="button" class="btn btn-disabled" disabled>Disabled</button>
+            <button type="button" class="btn-rounded btn-plus" disabled><img src="./images/plus.png"></button>
+            <button type="button" class="btn-rounded btn-minus" disabled><img src="./images/minus.png"></button>
+
+        </div>
+
+        <!-- Text area -->
+        <div class="section-name">
+            <h2>Text area</h2>
+        </div>
+
+        <div class="text-area">
+            <textarea class="text" rows="15" cols="90" placeholder="Enter some text..."></textarea>
+        </div>
+    </body>
+</html>

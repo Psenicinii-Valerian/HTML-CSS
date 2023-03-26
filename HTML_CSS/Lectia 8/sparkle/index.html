@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html>
+<!-- npm install boostrap  TERMINAL-->
+<!-- Shift + 1 - shorcut pentru a genera automat tagurile initiale in HTML -->
+<!-- . - iesim din fisierul index.html  -->
+<!-- / - prin acest simbol se separa folderurile si subfolderurile pe care dorim sa le accesam -->
+
+<head>
+    <title>Sparkle</title>
+
+    <!-- meta tag -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- styles  -->
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+
+    <!-- scripts  -->
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="./js/script.js"></script>
+
+</head>
+
+<body>
+    <!-- https://getbootstrap.com/docs/5.3/components/accordion/ -->
+    <!-- <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              Accordion Item #1
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Accordion Item #2
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              Accordion Item #3
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+      </div> -->
+
+    <!-- header start -->
+    <header>
+        <div class="header-banner">
+            <nav class="navbar bg-body-tertiary fixed-top">
+                <div class="container">
+                    <a class="navbar-brand" href="#">Offcanvas navbar</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                        aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Link</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        Dropdown
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <form class="d-flex mt-3" role="search">
+                                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                                <button class="btn btn-outline-success" type="submit">Search</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="container">
+                <div class="banner-content pt-5 pb-5">
+                    <h1>Design comes to those who wait</h1>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                    <button type="button" class="btn">Learn more</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header end  -->
+
+    <main>
+        <!-- about start -->
+        <section class="about pt-5 pb-5">
+            <div class="container">
+                <!-- place for icon !!! -->
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia minus tempora, unde id 
+                    quia provident sequi vitae aperiam aut temporibus, illo magni quam aliquid excepturi perspiciatis. 
+                    Quas omnis magnam ratione?
+                </p>
+            </div>
+        </section>
+        <!-- about end -->
+
+        <!-- services start -->
+        <section class="services">
+            <div class="container">
+                <div class="heading">
+                    <!-- place for icon !!! -->
+                    <h1>Our services</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia minus tempora, unde id 
+                    quia provident sequi vitae aperiam aut temporibus, illo magni quam aliquid excepturi perspiciatis. 
+                    Quas omnis magnam ratione?
+                    </p>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-12 col-md-6 col-lg-3">
+                        <div class="card rounded-0">
+                            <div class="card-body">
+                              <h5 class="card-title">Card title</h5>
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk 
+                                of the card's content.
+                              </p>                 
+                            </div>
+                        </div> 
+                        <div class="card rounded-0">
+                            <div class="card-body">
+                                <div class="progress-item">
+                                    <span class="progress-label">HTML</span>
+                                    <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                        <div class="progress-bar" style="width: 25%"></div>
+                                    </div>
+                                </div>
+
+                                <div class="progress-item">
+                                    <span class="progress-label">HTML</span>
+                                    <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                        <div class="progress-bar" style="width: 25%"></div>
+                                    </div>
+                                </div>
+
+                                <div class="progress-item">
+                                    <span class="progress-label">HTML</span>
+                                    <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                        <div class="progress-bar" style="width: 25%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12 col-md-6 col-lg-3">
+                        <div class="card rounded-0">
+                            <div class="card-body">
+                              <h5 class="card-title">Card title</h5>
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk 
+                                of the card's content.
+                              </p>                 
+                            </div>
+                        </div> 
+                        <div class="card rounded-0">
+                            <div class="card-body">
+                                <div class="progress-item">
+                                    <span class="progress-label">HTML</span>
+                                    <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                        <div class="progress-bar" style="width: 25%"></div>
+                                    </div>
+                                </div>
+
+                                <div class="progress-item">
+                                    <span class="progress-label">HTML</span>
+                                    <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                        <div class="progress-bar" style="width: 25%"></div>
+                                    </div>
+                                </div>
+
+                                <div class="progress-item">
+                                    <span class="progress-label">HTML</span>
+                                    <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                        <div class="progress-bar" style="width: 25%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12 col-md-6 col-lg-3">
+                        <div class="card rounded-0">
+                            <div class="card-body">
+                              <h5 class="card-title">Card title</h5>
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk 
+                                of the card's content.
+                              </p>                 
+                            </div>
+                        </div> 
+                        <div class="card rounded-0">
+                            <div class="card-body">
+                                <div class="progress-item">
+                                    <span class="progress-label">HTML</span>
+                                    <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                        <div class="progress-bar" style="width: 25%"></div>
+                                    </div>
+                                </div>
+
+                                <div class="progress-item">
+                                    <span class="progress-label">HTML</span>
+                                    <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                        <div class="progress-bar" style="width: 25%"></div>
+                                    </div>
+                                </div>
+
+                                <div class="progress-item">
+                                    <span class="progress-label">HTML</span>
+                                    <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                        <div class="progress-bar" style="width: 25%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12 col-md-6 col-lg-3">
+                        <div class="card rounded-0">
+                            <div class="card-body">
+                              <h5 class="card-title">Card title</h5>
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk 
+                                of the card's content.
+                              </p>                 
+                            </div>
+                        </div> 
+                        <div class="card rounded-0">
+                            <div class="card-body">
+                                <div class="progress-item">
+                                    <span class="progress-label">HTML</span>
+                                    <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                        <div class="progress-bar" style="width: 25%"></div>
+                                    </div>
+                                </div>
+
+                                <div class="progress-item">
+                                    <span class="progress-label">HTML</span>
+                                    <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                        <div class="progress-bar" style="width: 25%"></div>
+                                    </div>
+                                </div>
+
+                                <div class="progress-item">
+                                    <span class="progress-label">HTML</span>
+                                    <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                        <div class="progress-bar" style="width: 25%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>        
+
+            </div>
+        </section>
+        <!-- services end -->
+
+        <!-- counter start -->
+        <section class="counters pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 col-md-6 col-lg-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <span class="counter">352</span>
+                                <span class="counter">Completed design</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12 col-md-6 col-lg-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <span class="counter">1000</span>
+                                <span class="counter">Completed design</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12 col-md-6 col-lg-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <span class="counter">352</span>
+                                <span class="counter">Completed design</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12 col-md-6 col-lg-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <span class="counter">352</span>
+                                <span class="counter">Completed design</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- counter end -->
+
+    </main>
+
+</body>
+
+</html>

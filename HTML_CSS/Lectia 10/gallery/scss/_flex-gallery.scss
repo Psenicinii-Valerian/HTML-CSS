@@ -1,0 +1,44 @@
+.container {
+    max-width: 1400px;
+    margin: auto;
+}
+
+.flex-gallery.mansory-column {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 1005px;
+    gap: 10px;
+
+    .gallery-item {
+        width: calc(25% - 10px);
+        height: auto;
+        border-radius: 15px;
+        overflow: hidden;
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+}
+
+.flex-gallery.mansory-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+ // justify-content: center; // optional
+    gap: 10px;
+
+    .gallery-item {
+        width: auto;
+        height: 300px;
+        border-radius: 15px;
+        overflow: hidden;
+
+        img {
+            width: auto;
+            height: 100%;
+        }
+    }
+}

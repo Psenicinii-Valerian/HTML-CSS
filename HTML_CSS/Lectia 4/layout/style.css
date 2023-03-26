@@ -1,0 +1,73 @@
+header,
+nav,
+aside,
+main,
+footer {
+    background-color: palevioletred;
+    color: white;
+    margin: 5px;
+    padding: 30px;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.left-aside {
+    width: calc(25%);
+    position: relative;
+}
+
+.main {
+    width: calc(60% - 70px);
+}
+
+.right-aside {
+    width: calc(15%);
+    position: relative;
+}
+
+
+section {
+    height: 800px;
+    background-color: white;
+    opacity: 0.5;
+}
+
+section h1 {
+    opacity: 1;
+    color: #000;
+}
+
+aside {
+    position: sticky;
+    left: 0;
+    right: 0;
+}
+
+.aside1 {
+    top: 0;
+}
+
+.aside2 {
+    top: 130px;
+}
+
+.aside3 {
+    top: 0;
+}
+
+
+/* ----- Possitioned elements ----- */
+/* - position: relative; */
+/* - position: absolute; */
+/* - position: fixed; */
+/* - position: sticky; */
+
+/* ----- Related proprietis ----- */
+/* - top,  */
+/* - left,  */
+/* - right,  */
+/* - bottom, */
+/* - z-index */

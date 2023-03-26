@@ -1,0 +1,48 @@
+.collapse-menu {
+  background-color: #111a53;
+  height: calc(100vh - 100px);
+  min-height: 500px;
+}
+
+.navigation-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px 0px;
+}
+
+.navigation-menu .menu-items {
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
+}
+.navigation-menu .menu-item {
+  padding: 15px 0px;
+}
+.navigation-menu .menu-item a {
+  color: #8d91c2;
+  font-size: 20px;
+  text-decoration: none;
+}
+.navigation-menu .menu-item a:hover {
+  color: #5ad9b9;
+}
+
+.authorization-btn button {
+  background-color: #5ad9b9;
+  border: 2px solid #5ad9b9;
+  color: white;
+  border-radius: 25px;
+  padding: 10px 30px;
+  font-size: 20px;
+  font-weight: 700;
+}
+.authorization-btn button:hover {
+  background-color: #fff;
+  color: #5ad9b9;
+}
+
+body {
+  margin: 0;
+}/*# sourceMappingURL=main.css.map */

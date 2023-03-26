@@ -1,0 +1,42 @@
+// colors
+$default-green-color:rgb(12, 199, 12);
+$default-white-color: rgb(241, 239, 239);
+
+// text colors
+$font-family-text: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+
+// Breakpoints
+// Extra small screen
+@mixin for-esm { 
+    @media screen and (min-width: 375px){
+        @content;
+    }
+}
+
+// Small screen
+@mixin for-sm { 
+    @media screen and (min-width: 576px){
+        @content;
+    }
+}
+
+// Medium screen
+@mixin for-md {
+    @media screen and (min-width: 768px){
+        @content; 
+    }
+}
+
+// Large screen
+@mixin for-lg {
+    @media screen and (min-width: 992px) {
+        @content;
+    }
+}
+
+// Extra large screen
+@mixin for-xl {
+    @media screen and (min-width: 1200px) {
+        @content;
+    }
+}

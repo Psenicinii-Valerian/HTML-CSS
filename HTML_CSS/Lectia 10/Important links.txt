@@ -1,0 +1,7 @@
+1) BEM 101 link: https://css-tricks.com/bem-101/
+2) Complete guide to Flexbox link: https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+3) Complete guide to CSS Grid link:https://css-tricks.com/snippets/css/complete-guide-grid/
+4) Keyframe explanation link: https://www.w3schools.com/cssref/tryit.php?filename=trycss3_keyframes
+5) Masonry layout example link: https://freefrontend.com/css-masonry-layout-examples/
+6) Grid generator link: https://cssgrid-generator.netlify.app/
+7) Practice for JS and other languages link: https://www.freecodecamp.org/learn/?messages=success%5B0%5D%3Dflash.signin-success

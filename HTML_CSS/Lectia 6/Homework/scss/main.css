@@ -1,0 +1,209 @@
+body {
+  margin: 0;
+  background-color: rgb(219, 219, 219);
+}
+
+.section-name {
+  margin: 20px 0 -10px 16px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.inputs {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-left: 16px;
+  gap: 5px;
+}
+.inputs input {
+  width: 100%;
+  padding: 10px 0 10px 15px;
+  border-radius: 5px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  transition: background-color 0.5s ease-out;
+  background-color: rgb(241, 239, 239);
+}
+@media screen and (min-width: 375px) {
+  .inputs .input-resp {
+    max-width: 220px;
+    width: calc(50% - 15px);
+  }
+}
+@media screen and (min-width: 576px) {
+  .inputs .input-resp {
+    width: calc(33% - 15px);
+  }
+}
+.inputs input:required:valid {
+  border-color: rgb(12, 199, 12);
+  color: rgb(12, 199, 12);
+}
+.inputs input:invalid {
+  border-color: red;
+  color: red;
+}
+.inputs input:required:focus:valid {
+  background: url("/images/valid.png") no-repeat 95% 50%;
+  background-size: 20px;
+}
+.inputs input:focus:invalid {
+  background: url("/images/invalid.png") no-repeat 95% 50%;
+  background-size: 20px;
+}
+
+.switches {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-left: 16px;
+  gap: 100px;
+  /* The switch - the box around the slider */
+  /* Hide default HTML checkbox */
+  /* The slider */
+}
+.switches .switch {
+  position: relative;
+  display: inline-block;
+  width: 36px;
+  height: 21px;
+  border: 1px solid rgb(12, 199, 12);
+  border-radius: 2px;
+  background-color: rgb(241, 239, 239);
+}
+.switches .switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.switches .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: 0.4s;
+}
+.switches .slider:before {
+  position: absolute;
+  content: "";
+  height: 15px;
+  width: 15px;
+  left: 3px;
+  bottom: 3px;
+  transition: 0.4s;
+  background-color: rgb(12, 199, 12);
+  border-radius: 2px;
+}
+.switches input:checked + .slider {
+  background-color: rgb(241, 239, 239);
+}
+.switches input:focus + .slider {
+  background-color: rgb(241, 239, 239);
+}
+.switches input:checked + .slider:before {
+  transform: translateX(15px);
+  background-color: red;
+}
+.switches .switch:last-child {
+  border-color: red;
+}
+.switches .subscribe-text {
+  position: absolute;
+  left: 40px;
+  bottom: 1px;
+  font-size: 18px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.radio-btns {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-left: 16px;
+  gap: 15px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 18px;
+}
+.radio-btns .radio-item input {
+  accent-color: rgb(1, 170, 1);
+  position: absolute;
+  top: 2px;
+  height: 17px;
+  width: 17px;
+}
+.radio-btns .radio-item input:hover {
+  cursor: pointer;
+}
+.radio-btns .radio-item .gender {
+  margin-left: 25px;
+}
+
+.buttons {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-left: 16px;
+  gap: 7px;
+}
+.buttons .btn {
+  padding: 7px 10px;
+  width: 100px;
+  border-radius: 5px;
+  color: white;
+  font-size: 17px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  border: none;
+}
+.buttons .btn-work:hover {
+  cursor: pointer;
+  background-color: white;
+  color: black;
+}
+.buttons .btn-active {
+  background-color: rgb(12, 199, 12);
+}
+.buttons .btn-hover {
+  background-color: green;
+}
+.buttons .btn-danger {
+  background-color: rgb(182, 64, 84);
+}
+.buttons .btn-disabled {
+  background-color: grey;
+}
+.buttons .btn-rounded {
+  border-radius: 50%;
+  color: white;
+  font-size: 17px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  border: none;
+}
+.buttons .btn-plus {
+  padding: 12px;
+  background-color: rgb(0, 169, 0);
+}
+.buttons .btn-minus {
+  padding: 17px;
+  background-color: rgb(205, 67, 90);
+}
+
+.text-area {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-left: 16px;
+  gap: 7px;
+}
+.text-area textarea {
+  padding-top: 15px;
+  padding-left: 15px;
+}/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,242 @@
+.section-name {
+    margin: 20px 0 -10px 16px;
+    font-family: $font-family-text;
+}
+
+.inputs {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-left: 16px;
+    gap: 5px;
+    
+    input {  
+        width: 100%;    
+        padding: 10px 0 10px 15px;
+        border-radius: 5px;
+        font-family: $font-family-text; 
+        transition: background-color 0.5s ease-out;      
+        background-color: $default-white-color;   
+    } 
+        
+    .input-resp {          
+        @include for-esm {
+            max-width: 220px;
+            width: calc(50% - 15px);
+        }
+
+        @include for-sm {
+            width: calc(33% - 15px);
+        }
+    }
+
+    input:required:valid {
+        border-color: $default-green-color;
+        color: $default-green-color;
+    }
+
+    input:invalid { 
+        border-color: red;
+        color: red;
+    }
+
+    input:required:focus:valid {
+        background: url("/images/valid.png") no-repeat 95% 50%;
+        background-size: 20px;
+    }
+
+    input:focus:invalid {   
+        background: url("/images/invalid.png") no-repeat 95% 50%;
+        background-size: 20px;
+    }
+}
+
+.switches {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-left: 16px;
+    gap: 100px;
+
+    /* The switch - the box around the slider */
+    .switch {
+        position: relative;
+        display: inline-block;
+        width: 36px;
+        height: 21px;
+        border: 1px solid $default-green-color;
+        border-radius: 2px;
+        background-color: $default-white-color;
+    }
+
+    /* Hide default HTML checkbox */
+    .switch input {
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+    
+    /* The slider */
+    .slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        -webkit-transition: .4s;
+        transition: .4s;
+    }
+    
+    .slider:before {
+        position: absolute;
+        content: "";
+        height: 15px;
+        width: 15px;
+        left: 3px;
+        bottom: 3px;
+        -webkit-transition: .4s;
+        transition: .4s;
+        background-color: $default-green-color;
+        border-radius: 2px;
+    }
+
+    input:checked + .slider {
+        background-color: $default-white-color;
+    }   
+    
+    input:focus + .slider {
+        background-color: $default-white-color;
+    }
+    
+    input:checked + .slider:before {
+        -webkit-transform: translateX(15px);
+        -ms-transform: translateX(15px);
+        transform: translateX(15px);
+        background-color: red;
+    }
+
+    .switch:last-child {
+        border-color: red;
+    }
+
+    .subscribe-text {
+        position: absolute;
+        left: 40px;
+        bottom: 1px;
+        font-size: 18px;
+        font-family: $font-family-text;
+    }
+    
+}
+
+.radio-btns {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-left: 16px;
+    gap: 15px;
+    font-family: $font-family-text;
+    font-size: 18px;
+
+    .radio-item {
+        input {
+            accent-color: rgb(1, 170, 1);
+            position: absolute;
+            top: 2px;
+            height: 17px;   
+            width: 17px;
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+
+        .gender {
+            margin-left: 25px;
+        }
+
+    }  
+
+}
+
+.buttons {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-left: 16px;
+    gap: 7px;
+
+    .btn {
+        padding: 7px 10px;
+        width: 100px;
+        border-radius: 5px;
+        color: white;
+        font-size: 17px;
+        font-family: $font-family-text;
+        border: none;
+    }
+
+    .btn-work {
+        &:hover {       
+            cursor: pointer;
+            background-color: white;
+            color: black;
+        }
+    }
+
+    .btn-active {
+        background-color: $default-green-color;
+    }
+
+    .btn-hover {
+        background-color: green;
+    }
+
+    .btn-danger {
+        background-color: rgb(182, 64, 84);
+    }
+
+    .btn-disabled {
+        background-color: grey;
+    }
+
+    .btn-rounded {
+        border-radius: 50%;
+        color: white;
+        font-size: 17px;
+        font-family: $font-family-text;
+        border: none;
+    }
+
+    .btn-plus {
+        padding: 12px;
+        background-color: rgb(0, 169, 0);
+    }
+
+    .btn-minus {
+        padding: 17px;
+        background-color: rgb(205, 67, 90);
+    }
+}
+
+.text-area {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-left: 16px;
+    gap: 7px;
+
+    textarea {
+        padding-top: 15px;
+        padding-left: 15px;
+    }
+}

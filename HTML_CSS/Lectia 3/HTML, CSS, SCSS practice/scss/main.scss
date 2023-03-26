@@ -1,0 +1,112 @@
+@import 'variables';
+
+body {
+    margin: 0;
+}
+
+// .wrapper {
+//     background-color: black;
+//     padding: 30px;
+//     width: fit-content;
+// }
+
+.item {
+    background-color: $color-secondary;
+    width: calc(100% - 180px);
+    height: 150px;
+    margin: 30px;
+    /* margin-left: 30px 50px 20px 10px; top right bottom left */ 
+    padding: 30px;
+    border: 30px solid $color-primary;
+    /* align content horizontal/vertical */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.items {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+    background-color: $text-color;
+}
+
+// Navigation bar styles start
+.navigation-bar {
+    background-color: $color-secondary;
+
+    ul {
+        display: none;
+        list-style-type: none;
+        padding: 0;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    li {
+        display: flex;
+    }
+
+    a {
+        text-decoration: none;
+        color: black;
+        font-size: 12px;
+        font-weight: 700;
+        text-transform: uppercase;
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 10px 15px;
+
+        &:hover{
+            background-color: black;
+            color: white;    
+        }
+    }   
+}
+
+.navigation-btn {
+    border: none;
+    font-size: 20px;
+    padding: 15px;
+    background: transparent;
+}
+
+/* Navigation bar style end */
+/* ----- BREAKPOINTS ----- */
+/* TABLET */
+@media only screen and (min-width: 487px) {
+    .item {
+        width: calc(50% - 180px);
+    }
+
+    .navigation-bar {
+        ul {
+            display: flex;
+            flex-direction: row;
+        }
+
+        a {
+            font-size: 16px;
+            padding: 20px 30px;
+        }
+    }
+
+    .navigation-btn {
+        display: none;
+    }
+}
+
+/* DESKTOP */
+@media only screen and (min-width: 900px) {
+    .item {
+        width: calc(33.3% - 180px);
+    }
+}
+
+
+/* DESKTOP Wide */
+@media only screen and (min-width: 1200px) {
+    .item {
+        width: calc(25% - 180px);
+    }
+}

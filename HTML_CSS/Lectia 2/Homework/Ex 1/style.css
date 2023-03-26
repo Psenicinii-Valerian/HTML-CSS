@@ -1,0 +1,31 @@
+body{
+    margin: 0;
+}
+
+
+.fruits {
+    list-style: none;
+    display: flex;
+    width: 350px;
+    height: 150px;
+    flex-direction: column;
+    background-color: rgb(205, 139, 150);
+    margin: 10px; 
+}
+
+.item {
+    width: 370px;
+    margin-top: 10px;
+    margin-left: -30px;
+    background-color: rgb(199, 99, 116);
+    color: white;
+}
+
+.item a {
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: rgb(128, 19, 55);
+    text-decoration: none;
+}
+
